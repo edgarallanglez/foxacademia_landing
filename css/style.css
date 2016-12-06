@@ -82,6 +82,15 @@ footer.page-footer {
   margin: 15px 0 0 25px;
 }
 
+.card-background{
+  background: #f3f3f3;
+  max-height: 60%;
+  text-align: center;
+  padding: 5em;
+  overflow: hidden;
+  color: white;
+}
+
 @-webkit-keyframes dynamicBackground {
     0%{background-position:0% 91%}
     50%{background-position:100% 10%}

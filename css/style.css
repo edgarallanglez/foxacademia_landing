@@ -55,3 +55,38 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.white-semitransparent-text{
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+
+.gradient-animation{
+  background: linear-gradient(240deg, #7c56f8, #5bc7fe);
+  background-size: 400% 400%;
+
+  -webkit-animation: dynamicBackground 20s ease infinite;
+  -moz-animation: dynamicBackground 20s ease infinite;
+  -o-animation: dynamicBackground 20s ease infinite;
+  animation: dynamicBackground 20s ease infinite;
+}
+
+@-webkit-keyframes dynamicBackground {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+@-moz-keyframes dynamicBackground {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+@-o-keyframes dynamicBackground {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+@keyframes dynamicBackground { 
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}

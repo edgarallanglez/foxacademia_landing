@@ -11,6 +11,10 @@ nav .brand-logo {
   color: #444;
 }
 
+#index-banner {
+   z-index: 4;
+}
+
 p {
   line-height: 2rem;
 }
@@ -71,7 +75,8 @@ footer.page-footer {
 }
 
 .fixed {
-  position: fixed
+  position: fixed;
+  z-index: 3;
 }
 .nav-logo {
   width: 10%;
@@ -80,6 +85,11 @@ footer.page-footer {
 .index-logo {
   width: 18%;
   margin: 15px 0 0 25px;
+}
+
+#index-contact {
+  float: right;
+  margin: 50px 45px 0 0;
 }
 
 @-webkit-keyframes dynamicBackground {

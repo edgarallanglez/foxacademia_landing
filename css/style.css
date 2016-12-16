@@ -27,6 +27,11 @@ p {
   color: #26a69a;
 }
 
+.header {
+  font-weight: 300 !important;
+  margin-top: -20px;
+}
+
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -45,6 +50,11 @@ p {
   #index-banner .section {
     top: 10%;
   }
+
+  .emergin-image {
+    position: relative;
+    top: 350px !important;
+  }
 }
 
 @media only screen and (max-width : 600px) {
@@ -62,7 +72,18 @@ p {
     margin-bottom: 20px !important;
     text-align: center !important;
   }*/
+  .header {
+    margin-top: 1.46rem;
+  }
+}
 
+@media only screen and (min-width: 1439px) {
+  .row .col.xl2 {
+      width: 16.6666666667%;
+      margin-left: auto;
+      left: auto;
+      right: auto;
+  }
 }
 
 .icon-block {
@@ -81,8 +102,8 @@ footer.page-footer {
 }
 
 .gradient-animation{
-  background: linear-gradient(240deg, #7c56f8, #5bc7fe);
-  background-size: 400% 400%;
+  background: linear-gradient(240deg, #7b1fa2, #3CA5F0);
+  background-size: 200% 200%;
 
   -webkit-animation: dynamicBackground 20s ease infinite;
   -moz-animation: dynamicBackground 20s ease infinite;
@@ -103,9 +124,65 @@ footer.page-footer {
   margin: 15px 0 0 35px;
 }
 
+.card-background.ios {
+  background: url("../assets/ios_course.png");
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:top;
+  max-height: 60%;
+  text-align: center;
+  padding: 5em;
+  height: 190px;
+  overflow: hidden;
+  color: white;
+}
+
+.card-background.android {
+  background: url("../assets/android_course_2.png");
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:top;
+  max-height: 60%;
+  text-align: center;
+  padding: 5em;
+  height: 190px;
+  overflow: hidden;
+  color: white;
+}
+
+.card-background.web {
+  background: url("../assets/web_course.png");
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:top;
+  max-height: 60%;
+  text-align: center;
+  padding: 5em;
+  height: 190px;
+  overflow: hidden;
+  color: white;
+}
+
 #index-contact {
   /*float: right;*/
   margin-top: 50px;
+}
+
+.emergin-image {
+  position: relative;
+  top: 20px;
+}
+
+.width-3x {
+  width: 300% !important;
+}
+
+.image-mask-shadow {
+  -webkit-filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.75));
+}
+
+.image-mask-shadow.nav {
+  -webkit-filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.4));
 }
 
 @-webkit-keyframes dynamicBackground {

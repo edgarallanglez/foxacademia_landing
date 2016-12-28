@@ -163,6 +163,10 @@ footer.page-footer {
   color: white;
 }
 
+.card .card-content {
+  min-height: 190px !important;
+}
+
 #index-contact {
   /*float: right;*/
   margin-top: 50px;

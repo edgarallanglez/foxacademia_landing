@@ -1,0 +1,10 @@
+[19-Aug-2014 18:30:06 America/Chicago] PHP Warning:  require_once(vendor/autoload.php): failed to open stream: No such file or directory in /home/mexico17/public_html/shopMaster/php/PHPMailer/test/bootstrap.php on line 2
+[19-Aug-2014 18:30:06 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home/mexico17/public_html/shopMaster/php/PHPMailer/test/bootstrap.php on line 2
+[20-Aug-2014 03:53:26 America/Chicago] PHP Fatal error:  Class 'PHPUnit_Framework_TestCase' not found in /home/mexico17/public_html/shopMaster/php/PHPMailer/test/phpmailerLangTest.php on line 23
+[20-Aug-2014 10:42:54 America/Chicago] PHP Warning:  strstr() expects parameter 1 to be string, array given in /home/mexico17/public_html/shopMaster/php/PHPMailer/test/test_callback.php on line 65
+[20-Aug-2014 14:07:25 America/Chicago] PHP Warning:  strstr() expects parameter 1 to be string, array given in /home/mexico17/public_html/shopMaster/php/PHPMailer/test/test_callback.php on line 65
+[20-Aug-2014 17:04:36 America/Chicago] PHP Fatal error:  Class 'PHPUnit_Framework_TestCase' not found in /home/mexico17/public_html/shopMaster/php/PHPMailer/test/phpmailerTest.php on line 23
+[21-Aug-2014 17:26:21 America/Chicago] PHP Warning:  strstr() expects parameter 1 to be string, array given in /home/mexico17/public_html/shopMaster/php/PHPMailer/test/test_callback.php on line 65
+[04-Sep-2014 21:58:00 America/Chicago] PHP Warning:  strstr() expects parameter 1 to be string, array given in /home/mexico17/public_html/shopMaster/php/PHPMailer/test/test_callback.php on line 65
+[18-Sep-2014 16:05:32 America/Chicago] PHP Warning:  strstr() expects parameter 1 to be string, array given in /home/mexico17/public_html/shopMaster/php/PHPMailer/test/test_callback.php on line 65
+[26-Oct-2014 21:34:49 America/Chicago] PHP Warning:  strstr() expects parameter 1 to be string, array given in /home/mexico17/public_html/shopMaster/php/PHPMailer/test/test_callback.php on line 65

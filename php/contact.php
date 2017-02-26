@@ -12,7 +12,7 @@ if($api=='mail'){
 		   </div>";
 	mailAttachment("foxacademia85@gmail.com", $course,$html);*/
 
-	$fp = fopen('data_base.txt', 'a');
+	$fp = fopen('../data_base.txt', 'a');
 	fwrite($fp, $email.' = '.$course.PHP_EOL);
 	fclose($fp);
 

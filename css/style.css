@@ -10,7 +10,9 @@ nav ul a,
 nav .brand-logo {
   color: #444;
 }
-
+a:hover{
+  cursor: pointer;
+}
 #index-banner {
    z-index: 4;
 }
@@ -38,10 +40,34 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-container .section {
+  width: 100%;
+}
+#send_icon{
+  position: absolute;
+  left:0;
+}
 
+#send_button_container .preloader-wrapper{
+    vertical-align: middle;
+    display: inline-block;
+}
+#send_button_container .preloader-wrapper .spinner-layer{
+    border-color: white;
+}
+#close_contact{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+#close_contact:hover{
+  cursor: pointer;
+}
+.error_message{
+  font-size: 20px;
+}
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -166,6 +192,18 @@ footer.page-footer {
   color: white;
 }
 
+.card-background.sprite {
+  background: url("../assets/spritekit_course.png");
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:top;
+  max-height: 60%;
+  text-align: center;
+  padding: 5em;
+  height: 190px;
+  overflow: hidden;
+  color: white;
+}
 .card .card-content {
   min-height: 280px !important;
 }
@@ -196,8 +234,8 @@ footer.page-footer {
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 10;
   text-align: center;
+  display: none;
 }
 #contact_box input{
   font-size: 30px;
@@ -209,7 +247,8 @@ footer.page-footer {
   vertical-align: middle;
   background: rgba(248,248,248,0.7);
   border-radius: 5px;
-  padding: 5px;
+  padding: 5px 15px;
+  font-weight: 300;
   box-shadow: 4px 10px 20px rgba(43,43,43,1);;
 }
 #contact_box a{

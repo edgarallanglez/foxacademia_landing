@@ -7,10 +7,18 @@ if($api=='mail'){
 	$email=$_GET['email'];
 	$course=$_GET['course'];
 
-	$html="<div>
+	/*$html="<div>
 				<p>El usuario <strong>$email</strong> solictó información del curso: <strong>$course</strong>.</p>
 		   </div>";
-	mailAttachment("foxacademia85@gmail.com", $course,$html);
+	mailAttachment("foxacademia85@gmail.com", $course,$html);*/
+
+	$fp = fopen('data_base.txt', 'a');
+	fwrite($fp, $email.' = '.$course.PHP_EOL);
+	fclose($fp);
+
+	$message="success";
+    $data =  array('message' => $message);
+    echo json_encode($data);
 }
 
 function mailAttachment($mailto, $subject, $message) {

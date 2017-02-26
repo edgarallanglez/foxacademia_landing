@@ -192,6 +192,18 @@ footer.page-footer {
   color: white;
 }
 
+.card-background.sprite {
+  background: url("../assets/spritekit_course.png");
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:top;
+  max-height: 60%;
+  text-align: center;
+  padding: 5em;
+  height: 190px;
+  overflow: hidden;
+  color: white;
+}
 .card .card-content {
   min-height: 280px !important;
 }

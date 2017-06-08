@@ -6,6 +6,9 @@
  * Made By MaterializeCSS.com
  */
 
+body {
+  background: #f2f2f2;
+}
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -153,30 +156,50 @@ footer.page-footer {
   margin: 15px 0 0 35px;
 }
 
-.card-background.ios {
-  background: url("../assets/ios_course.png");
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:top;
+.card {
+  padding: 0.5em;
+}
+
+.card-background {
+  display: inline-block;
   max-height: 60%;
-  text-align: center;
-  padding: 5em;
   height: 190px;
+  color: gray;
+  position: relative;
+  border-radius: 5px;
+  margin: 20px 0 0;
+}
+
+.card-background.ios {
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%,
+                               rgba(0, 0, 0, 0.1) 100%),
+    linear-gradient(to left, rgba(77, 114, 255, 0.30) 0%,
+                             rgba(226, 77, 77, 0.30) 100%),
+    linear-gradient(to bottom, rgba(244, 54, 54, 0.50) 0%,
+                               rgba(202, 11, 11, 0.50) 100%),
+                               url('../assets/foto.png');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
   overflow: hidden;
-  color: white;
 }
 
 .card-background.android {
-  background: url("../assets/android_course_2.png");
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:top;
-  max-height: 60%;
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%,
+                               rgba(0, 0, 0, 0.1) 100%),
+    linear-gradient(to right bottom, rgba(32, 78, 255, 0.6) 0%,
+                               rgba(2, 255, 199, 0.5) 100%),
+                               url('../assets/android_course.png');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   text-align: center;
-  padding: 5em;
-  height: 190px;
   overflow: hidden;
-  color: white;
 }
 
 .card-background.web {
@@ -193,19 +216,59 @@ footer.page-footer {
 }
 
 .card-background.sprite {
-  background: url("../assets/spritekit_course.png");
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:top;
-  max-height: 60%;
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%,
+                               rgba(0, 0, 0, 0.1) 100%),
+    linear-gradient(to bottom, rgba(77, 114, 255, 0.50) 0%,
+                             rgba(142, 36, 170, 0.50) 100%),
+    linear-gradient(to left, rgba(244, 54, 54, 0.1) 0%,
+                               rgba(202, 11, 11, 0.1) 100%),
+                               url('../assets/spritekit.png');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   text-align: center;
-  padding: 5em;
-  height: 190px;
   overflow: hidden;
-  color: white;
 }
+
+.card-background.video {
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%,
+                               rgba(0, 0, 0, 0.1) 100%),
+    linear-gradient(to bottom, rgba(77, 114, 255, 0.50) 0%,
+                               rgba(0, 33, 107, 0.8) 100%),
+    linear-gradient(to left, rgba(244, 54, 54, 0.1) 0%,
+                               rgba(202, 11, 11, 0.1) 100%),
+                               url('../assets/video.jpg');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  overflow: hidden;
+}
+
 .card .card-content {
-  min-height: 280px !important;
+  min-height: 310px !important;
+  text-align: left;
+  position: relative;
+  padding: 10px !important;
+}
+
+.price {
+  text-align: right;
+  font-size: 2em;
+  color: #333 !important;
+  font-weight: 300;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px !important;
+}
+
+.card-action {
+  text-align: center;
 }
 
 #index-contact {
@@ -281,4 +344,19 @@ footer.page-footer {
     0%{background-position:0% 91%}
     50%{background-position:100% 10%}
     100%{background-position:0% 91%}
+}
+
+ul {
+  margin: 0;
+  padding: 10px 20px !important;
+}
+
+li {
+  list-style-type: circle !important;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+li:last-child {
+  border: none;
 }
